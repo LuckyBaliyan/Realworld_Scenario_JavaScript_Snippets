@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle_Functionality</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Neue Montreal",sans-serif;
+            background-color: #fff;
+            transition: background 0.5s ease;
+        }
+
+        body.dark{
+            background-color: #000;
+        }
+
+        body.dark p{
+            color:#fff;
+        }
+
+        body.dark button{
+            color:#fff;
+        }
+
+        main{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+            gap:1.2rem;
+        }
+
+        button{
+            border: 0;
+            outline: 0;
+            padding:.4em .8em;
+            border-radius: 4px;
+            background-color: #3599e5;
+            color:#070707;
+            cursor: pointer;
+            font-size:1.2rem;
+            font-weight: 800;
+            transition: color 0.5s ease;
+        }
+
+        p{
+            font-size: 1.5em;
+            font-weight: 500;
+            white-space: nowrap;
+            transition: color 0.7s ease;
+        }
+
+        button:active{
+           transform: scale(0.9);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <button class="toggle-theme">Dark</button>
+        <p>Toggle Functionality click for Theme toggle</p>
+    </main>
+
+    <script type="module" src="Script.js"></script>
+</body>
+</html>

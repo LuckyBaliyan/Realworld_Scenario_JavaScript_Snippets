@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        body{
+            font-family: "Neue Montreal",sans-serif;
+            background-color: #d0d8cd;
+        }
+
+        main{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width:30vw;
+            min-height: 30vh;
+            background: linear-gradient(135deg, #2e2e2e, #121212);
+            color: white;
+            border-radius: 32px;
+            padding:2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:1em;
+            box-shadow: 1px 1px 8px rgb(120, 120, 120);
+            text-transform: uppercase;
+        }
+
+        input{
+            width:100%;
+            padding:.8em;
+            height:3em;
+            border-radius: 14px;
+            background-color: #45473f;
+            border:0;
+            outline: none;
+            color:wheat;
+            font-size: 2.6rem;
+            font-family:"Orbitron", sans-serif;
+            font-weight: 500;
+            user-select: none;
+            box-shadow: inset 4px 3px 8px rgba(0, 0, 0, 0.292);
+        }
+
+        input[readonly] {
+          caret-color: transparent;
+          user-select: none;
+        }
+
+        button{
+            padding:.5em 1.2em;
+            color:rgb(253, 252, 251);
+            font-size: 1rem;
+            border:none;
+            outline: none;
+            border-radius: 40px;
+            background: #45473f;
+            cursor: pointer;
+            opacity: 0.8;
+            border-radius: inset 2px 2px 5px rgba(0,0,0,0.292);
+        }
+
+        button:active{
+            transform: scale(0.9);
+        }
+
+        h2{
+            opacity: 0.9;
+            letter-spacing: 0.1em;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h2>CountDown Timer</h2>
+        <input type="text" readonly value="00:00:00">
+        <button>Reset</button>
+    </main>
+
+    <script type="module" src="Script.js"></script>
+</body>
+</html>
