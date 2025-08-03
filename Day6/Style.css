@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Neue Montreal",sans-serif;
+    background-color: rgb(202, 199, 196);
+}
+
+h2{
+    font-size: 2.5vw;
+    color:rgb(14, 14, 14);
+    font-weight: 600;
+}
+
+p{
+    font-size:16px;
+    color:rgba(14,14,14);
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(254, 253, 253);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ul{
+    display: flex;
+    padding: .3em;
+    gap:0.5em;
+    align-items: center;
+    justify-content: space-evenly;
+    width:20%;
+}
+
+ul li{
+    list-style: none;
+    color:black;
+    mix-blend-mode: difference;
+}
+
+img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+button{
+    outline: 0;
+    border:0;
+    background-color: rgb(9, 9, 9);
+    border-radius: 4px;
+    padding:.4em 1em;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color:rgb(25, 25, 26);
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    overflow: hidden;
+    padding: .8em;
+    background: rgba(255, 255, 255, 0.311);
+    backdrop-filter: blur(14px);
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+    transition-delay: 0.5ms;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card p{
+    font-size: 14px;
+    margin-left: .6em;
+}
+
+.card{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 12px;
+    background: #e68937;
+    padding:.5em;
+    box-shadow: 0 0 8px rgba(71, 71, 71, 0.682);
+}
+
+.card-wrapper{
+    width:23vw;
+    height:28vw;
+    border-radius: 12px;
+    overflow: hidden;
+    padding:.5em;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    padding:2em 3em;
+}
+
+.img-wrap{
+    width:90%;
+    height:30%;
+    overflow: hidden;
+}
+
+.showHeader{
+    transform: translateY(0);
+}
